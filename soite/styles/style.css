@@ -1,0 +1,193 @@
+
+
+nav {
+  grid-column: span 5;
+  font-family: Verdana;
+  font-size: medium;
+  background-color: black;
+  text-align: center;
+}
+
+nav * {
+  color: #ffffff;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: aqua;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+body {
+  background: linear-gradient(to bottom, #394240, #293037);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 0px;
+  column-gap: 20px;
+}
+
+form {
+  min-height: 100vh; 
+}
+
+#result {
+  height: auto;
+}
+
+h1, h3 {
+  grid-column: span 5;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+}
+
+/* Update this CSS in your existing styles */
+#inputTable {
+  width: 400px; /* Set your desired fixed width */
+  border-collapse: collapse; /* Remove space between table cells */
+  margin: 0; /* Remove default margin */
+}
+
+#inputTable td {
+  padding: 3px;
+}
+
+#inputTable td:nth-child(2) {
+  width: 60%; /* Set the width of the second column */
+}
+
+#inputTable input {
+  width: 100%; /* Set the width of the input boxes to 100% of the width of the second column */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  padding: 3px; /* Add padding to the input boxes for a cleaner look */
+  border: 1px solid #ddd; /* Add a light border to the input boxes */
+  border-radius: 4px; /* Add rounded corners to the input boxes */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Add transitions for smoother effects */
+}
+
+#inputTable input:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #3498db; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Add a subtle box shadow on focus */
+}
+
+#inputTable td:first-child {
+  white-space: nowrap; /* Prevent text from wrapping */
+  width: 100px; /* Adjust the width of the first column */
+}
+
+
+#inputForm {
+  grid-column: 1 / span 3;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#result {
+  grid-column: 4 / span 2;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  background-color: #2c2c2c;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition for smoother effect */
+}
+
+.checkbox-group label:hover,
+.checkbox-group label input[type="checkbox"]:checked {
+  background-color: #545454; /* Pink color when hovered or checked */
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.checkbox-group label input[type="checkbox"] {
+  flex: 0 0 auto;
+}
+
+#inputForm label[name^="data"] {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#inputForm label[name^="data"] input {
+  margin-left: 10px;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.radio-group label {
+  background-color: #2c2c2c;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition for smoother effect */
+}
+
+.radio-group label:hover,
+.radio-group label input[type="radio"]:checked {
+  background-color: #545454; /* Pink color when hovered or checked */
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.radio-group label input[type="radio"] {
+  flex: 0 0 auto;
+}

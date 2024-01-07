@@ -1,0 +1,285 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Calculates minion profits, experience and collection"
+    />
+    <title>Skyblock Minion Calculator</title>
+    <link rel="icon" href="Minions.webp" type="image/icon type" />
+    <link rel="canonical" href="https://sekki-minions.com/Minions" />
+    <link href="/Pages/style.css" rel="stylesheet" type="text/css" />
+    <script src="minions.js" defer=""></script>
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1147.0" data-gr-ext-installed="">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/Pages/Events/events.html">Events</a>
+      <a href="/Pages/Elections/elections.html">Elections</a>
+      <a href="/Pages/Minions/minions.html">Minions</a>
+      <a href="/Pages/Jerry/jerry.html">Jerry</a>
+      <a href="/Pages/Farming/farming.html">Farming</a>
+      <a href="/Pages/Mining/mining.html">Mining</a>
+      <a href="/Pages/Nothing/nothing.html">Nothing</a>
+      <a href="/Pages/Powerstone/powerstones.html">Powerstone</a>
+      <a href="/Pages/Issues/issues.html">Info/Issues</a>
+    </nav>
+
+    <h1>
+      <hr />
+      Skyblock Minion Calculator
+      <br />
+      By BlueSekki
+      <hr />
+    </h1>
+
+    <form id="inputForm">
+      <!-- Inside the form tag, replace the existing input section with this code -->
+      <h2>Input Minion Data</h2>
+      <table id="inputTable">
+        <tr>
+          <td>Total Minions:</td>
+          <td><input type="number" name="data1" min="1" max="31" /></td>
+        </tr>
+        <tr>
+          <td>Mining Wisdom:</td>
+          <td><input type="number" name="data2" min="0" /></td>
+        </tr>
+        <tr>
+          <td>Farming Wisdom:</td>
+          <td><input type="number" name="data3" min="0" /></td>
+        </tr>
+        <tr>
+          <td>Foraging Wisdom:</td>
+          <td><input type="number" name="data4" min="0" /></td>
+        </tr>
+        <tr>
+          <td>Fishing Wisdom:</td>
+          <td><input type="number" name="data5" min="0" /></td>
+        </tr>
+        <tr>
+          <td>Combat Wisdom:</td>
+          <td><input type="number" name="data6" min="0" /></td>
+        </tr>
+        <tr>
+          <td>Budget Per Minion:</td>
+          <td><input type="number" name="data7" /></td>
+        </tr>
+        <tr>
+          <td>Filter Minions:</td>
+          <td><input type="text" name="data8" /></td>
+        </tr>
+        <tr>
+          <td>Exclude Minions:</td>
+          <td><input type="text" name="data9" /></td>
+        </tr>
+      </table>
+
+      <h2>Set 1: Select two minion upgrades</h2>
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="set1" value="+corruptsoil" /> Corrupt
+          Soil
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="+enchantedegg" /> Enchanted
+          Egg
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="+diamondspreading" />
+          Diamond Spreading
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="+potatospreading" /> Potato
+          Spreading
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="+berberisinjector" />
+          Berberis Injector
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="+soulflowengine" /> Soulflow
+          Engine
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="+lesserengine" /> Lesser
+          Soulflow Engine
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="+krampushelmet" /> Krampus
+          Helmet
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="+sleepyhollow" /> Sleepy
+          Hollow
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="+sc3k" /> Super Compactor
+          3000
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="0.05" /> Minion Expander
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="0.05" /> Minion Expander
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="0.20" /> Fly Catcher
+        </label>
+        <label>
+          <input type="checkbox" name="set1" value="0.20" /> Fly Catcher
+        </label>
+      </div>
+
+      <h2>Set 2: Select one fuel option</h2>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="set2" value="0.25" /> Enchanted Lava Bucket
+        </label>
+        <label>
+          <input type="radio" name="set2" value="0.30" /> Magma Bucket
+        </label>
+        <label>
+          <input type="radio" name="set2" value="0.35" /> Plasma Bucket
+        </label>
+        <label>
+          <input type="radio" name="set2" value="0.05 -coal" /> Coal
+        </label>
+        <label>
+          <input type="radio" name="set2" value="0.05 -coalblock" /> Coal Block
+        </label>
+        <label>
+          <input type="radio" name="set2" value="0.10 -enchantedcoal" />
+          Enchanted Coal
+        </label>
+        <label>
+          <input type="radio" name="set2" value="0.20 -enchantedcharcoal" />
+          Enchanted Charcoal
+        </label>
+        <label>
+          <input type="radio" name="set2" value="0.50 -hamsterwheel" /> Hamster
+          Wheel
+        </label>
+        <label>
+          <input type="radio" name="set2" value="0.90 -foulflesh" /> Foul Flesh
+        </label>
+        <label>
+          <input type="radio" name="set2" value="0.05 -enchantedbread" />
+          Enchanted Bread
+        </label>
+        <label>
+          <input type="radio" name="set2" value="+catalyst -catalyst" />
+          Catalyst
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="set2"
+            value="+hypercatalyst -hypercatalyst"
+          />
+          Hyper Catalyst
+        </label>
+        <label>
+          <input type="radio" name="set2" value="+tastycheese -tastycheese" />
+          Tasty Cheese
+        </label>
+        <label>
+          <input type="radio" name="set2" value="0.40" /> Everburning Flame
+        </label>
+        <label>
+          <input type="radio" name="set2" value="0.25" /> Solar Panel
+        </label>
+      </div>
+
+      <h2>Set 3: Select one hopper option</h2>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="set3" value="+nohopper" /> No Hopper
+        </label>
+        <label>
+          <input type="radio" name="set3" value="+budgethopper" /> Budget Hopper
+        </label>
+        <label>
+          <input type="radio" name="set3" value="+enchantedhopper" /> Enchanted
+          Hopper
+        </label>
+      </div>
+
+      <h2>Set 4: Select one item price option</h2>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="set4" value="=sellorder" /> Sell Order
+        </label>
+        <label>
+          <input type="radio" name="set4" value="=sellinsta" /> Insta Sell
+        </label>
+        <label>
+          <input type="radio" name="set4" value="=npcsell" /> Npc Price
+        </label>
+      </div>
+
+      <h2>Set 5: Select one sorting method</h2>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="set5" value="~maxprofit" /> Max Profit
+        </label>
+        <label>
+          <input type="radio" name="set5" value="~lowestprofit" /> Lowest Profit
+        </label>
+        <label>
+          <input type="radio" name="set5" value="~mining" /> Mining
+        </label>
+        <label>
+          <input type="radio" name="set5" value="~farming" /> Farming
+        </label>
+        <label>
+          <input type="radio" name="set5" value="~foraging" /> Foraging
+        </label>
+        <label>
+          <input type="radio" name="set5" value="~fishing" /> Fishing
+        </label>
+        <label>
+          <input type="radio" name="set5" value="~combat" /> Combat
+        </label>
+      </div>
+
+      <h2>Set 6: Select as many as you want</h2>
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="set6" value="0.10" /> Infusion
+        </label>
+        <label>
+          <input type="checkbox" name="set6" value="0.10" /> Crystal
+        </label>
+        <label>
+          <input type="checkbox" name="set6" value="0.10" /> Beacon
+        </label>
+        <label> <input type="checkbox" name="set6" value="0.30" /> Pet </label>
+        <label> <input type="checkbox" name="set6" value="=afk" /> Afk </label>
+        <label>
+          <input type="checkbox" name="set6" value="=derpy" /> Derpy
+        </label>
+        <label>
+          <input type="checkbox" name="set6" value="=xp" /> Show Xp
+        </label>
+        <label>
+          <input type="checkbox" name="set6" value="=collection" /> Show
+          Collection
+        </label>
+        <label>
+          <input type="checkbox" name="set6" value="!=mobs" /> Exclude Mobs
+        </label>
+      </div>
+
+      <p></p>
+      <button type="button" onclick="calculateResult()">Calculate</button>
+      <button type="button" onclick="shareResult()">Share Preset</button>
+    </form>
+
+    <div id="result">
+      <!-- Result table will be displayed here -->
+    </div>
+  </body>
+</html>
